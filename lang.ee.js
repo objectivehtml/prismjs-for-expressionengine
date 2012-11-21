@@ -34,7 +34,8 @@ Prism.languages.ee = Prism.languages.extend('markup', {
 		}
 	},
 	// insert bracket
-	'keyword': /(if|switch|else)/g
+	'keyword': /(if|switch|else)/g,
+	'comment': /(&lt;|\{)!--[\w\W]*?--(&gt;|\})/g
 });
 
 Prism.languages.insertBefore('inside', 'keyword', {

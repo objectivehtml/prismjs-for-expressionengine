@@ -2,8 +2,6 @@
 
 #### Author
 Justin Kimbrell (Objective HTML)
-
-#### Site
 http://www.objectivehtml.com
 
 ### Overview
@@ -19,3 +17,15 @@ Copy the lang.ee.js file and include it in the Prism.js file, or include it sepe
 		// Your code goes here
 	
 	</code></pre>
+	
+
+### License
+
+MIT license http://www.opensource.org/licenses/mit-license.php/
+
+### Credits
+
+Thanks to Lea Verou for writting and releasing Prism.js - a job very well done!
+
+- http://lea.verou.me
+- http://prismjs.com
