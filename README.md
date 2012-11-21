@@ -8,7 +8,7 @@ http://www.objectivehtml.com
 
 ### Overview
 
-This is a basic syntax highlighter for ExpressionEngine code built specifically for (Prism.js)[http://prismjs.com].
+This is a basic syntax highlighter for ExpressionEngine code built specifically for [Prism.js](http://prismjs.com).
 
 ### Installation
 
@@ -18,4 +18,4 @@ Copy the lang.ee.js file and include it in the Prism.js file, or include it sepe
 	
 		// Your code goes here
 	
-	</pre></code>
+	</code></pre>
