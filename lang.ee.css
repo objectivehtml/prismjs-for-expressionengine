@@ -107,6 +107,10 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+test
+/* -----------------------------------------
+	Default EE styles	
+----------------------------------------- */
 
 .token.parameter {
 	color: #690;
