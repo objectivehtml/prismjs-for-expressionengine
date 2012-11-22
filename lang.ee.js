@@ -17,6 +17,16 @@ Prism.languages.ee = Prism.languages.extend('markup', {
 			'keyword': /(if|switch|else)/g
 		}
 	},
+	'embed': {
+		pattern: /(&#123;|{)embed=(\047|\042)[\w|\/]*(\047|\042)(&#125;|})/,
+		inside: {
+			// insert bracket 
+			'keyword': /embed/g,
+			'operator': /=/g,
+			'punctuation': /(\047|\042)/g,
+			'path': /.*/
+		}
+	},
 	// insert conditional
 	'variable': {
 		pattern: /(\{|&#123;)\/?\w.*(\}|&#125;)/,
@@ -41,6 +51,10 @@ Prism.languages.ee = Prism.languages.extend('markup', {
 Prism.languages.insertBefore('inside', 'keyword', {
 	'bracket': Prism.languages.ee.variable.inside.bracket
 }, Prism.languages.ee.eetag);
+
+Prism.languages.insertBefore('inside', 'keyword', {
+	'bracket': Prism.languages.ee.variable.inside.bracket
+}, Prism.languages.ee.embed);
 
 Prism.languages.insertBefore('inside', 'bracket', {
 	'conditional': {
